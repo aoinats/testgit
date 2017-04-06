@@ -24,6 +24,7 @@ public class GrillMan
 		//selenium.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);  // test shodit s uma
 		//selenium.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS); // ne rabotaet
 		//as
+		//gfgf
 		
 		
 		selenium.get("https://grill-man.ru/");	
