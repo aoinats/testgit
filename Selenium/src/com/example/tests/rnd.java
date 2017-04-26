@@ -36,11 +36,11 @@ public class rnd
  	    		List<WebElement> myList=selenium.findElements(By.cssSelector
  	    				("input[value=Заказать]"));
  	    		
- 	    		List<WebElement> all_elements_text=new ArrayList<WebElement>();
+ 	    		List<WebElement> all_elements=new ArrayList<WebElement>();
  	    		
     		    for(int i=0; i<myList.size(); i++)
     		    {
-    		    	all_elements_text.add(myList.get(i));
+    		    	all_elements.add(myList.get(i));
     		    	myList.get(i).click();
     		    	System.out.println(all_elements_text);
     		    }			  
