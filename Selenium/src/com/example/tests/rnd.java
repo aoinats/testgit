@@ -34,7 +34,7 @@ public class rnd
      		//	("#content [class=node node-catalog node-promoted clearfix"));
      				 
  	    		List<WebElement> myList=selenium.findElements(By.cssSelector
- 	    				("input[value=Заказать]"));
+ 	    				("input[value=Р—Р°РєР°Р·Р°С‚СЊ]"));
  	    		
  	    		List<WebElement> all_elements_text=new ArrayList<WebElement>();
  	    		
@@ -48,7 +48,7 @@ public class rnd
     			
    		    
    		    //39585
-   		 // #content [class="node node-catalog node-promoted clearfix"] - ноды
+   		 // #content [class="node node-catalog node-promoted clearfix"] - Г­Г®Г¤Г»
    		 
    		 /*
 			List<WebElement> myList2=selenium.findElements(By.linkText("+"));
