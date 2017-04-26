@@ -38,12 +38,15 @@ public class TestFile
     		WebElement catalog = selenium.findElement(By.cssSelector("div#content"));
     			 List<WebElement> list = catalog.findElements(By.cssSelector(".trimmed-text"));
     			 
+    			 
     			 for (WebElement foods : list)  
     			 {
     				 System.out.println(String.format("Блюдо: %s", foods.getText()));
     		         zzz.println(String.format("Блюдо: %s", foods.getText()));
     				 //foods.click();
     			 }
+    			
+    			 
     	         	zzz.close();
     	 }
     	 	@After

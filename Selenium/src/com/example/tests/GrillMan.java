@@ -26,6 +26,8 @@ public class GrillMan
 		
 		
 		selenium.get("https://grill-man.ru/");	
+		Thread.sleep(2000);
+		
 		
 			Thread.sleep(2000);
 		WebElement Plus1 = (new WebDriverWait(selenium, 10))
@@ -36,7 +38,7 @@ public class GrillMan
 			Thread.sleep(2000);
 		WebElement button1 = (new WebDriverWait(selenium, 10))
 			 .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector
-					 ("form#commerce-cart-add-to-cart-form-177 input#edit-submit")));
+					 ("form#commerce-cart-add-to-cart-form-374 input#edit-submit")));
 		selenium.findElement(By.cssSelector("form#commerce-cart-add-to-cart-form-177 input#edit-submit")).click();
 	 
 		
