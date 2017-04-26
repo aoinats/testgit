@@ -42,7 +42,7 @@ public class rnd
     		    {
     		    	all_elements.add(myList.get(i));
     		    	myList.get(i).click();
-    		    	System.out.println(all_elements_text);
+    		    	System.out.println(all_elements);
     		    }			  
     		    
     			
