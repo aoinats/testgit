@@ -27,7 +27,6 @@ public class rnd
     @Test
     public void test() throws InterruptedException
     { 
-    	selenium.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
      	selenium.get("https://grill-man.ru/catalog");
      		
      	//List<WebElement> nodes = selenium.findElements(By.cssSelector
@@ -40,6 +39,7 @@ public class rnd
  	    		
     		    for(int i=0; i<myList.size(); i++)
     		    {
+			Thread.sleep(2000);
     		    	all_elements.add(myList.get(i));
     		    	myList.get(i).click();
     		    	System.out.println(all_elements);
