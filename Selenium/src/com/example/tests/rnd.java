@@ -39,6 +39,7 @@ public class rnd
 		    	//количество
 		    	List<WebElement> kolichestvo=selenium.findElements(By.linkText("+"));
  				
+		    		//нажатие каждой нечётной кнопки 
  				for(int i=0; i<kolichestvo.size(); i = i + 2)
  				{
  					kolichestvo.get(i).click();	
@@ -66,10 +67,17 @@ public class rnd
 		    	 WebElement oformitZakaz = selenium.findElement(By.cssSelector("#edit-continue"));
 			 oformitZakaz.click();
 		    
-		    	 assertEquals("Вы дошли до первой «несгораемой суммы»"
-    		    		,selenium.findElement(By.cssSelector("div.discount")).getText());
-    		    	 selenium.navigate().back();
-    		    
+		    	if(true) {
+    		    	assertEquals("Вы дошли до первой «несгораемой суммы»"
+        		    		,selenium.findElement(By.cssSelector("div.discount")).getText());
+    	            		System.out.println("Скидка есть");
+    	        	} else {
+    	               		System.out.println("Скидки нет.");
+    	                }
+    		        
+		    	selenium.navigate().back();
+		    
+		    
 			 
     		    
     			
