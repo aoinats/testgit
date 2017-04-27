@@ -59,25 +59,25 @@ public class rnd
 			 WebElement number = (new WebDriverWait(selenium, 10))
 						 .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector
 								 ("#edit-customer-profile-billing-field-phone-und-0-value")));
+		    
+		    	//тест по непонятным причинам не вводит номер и падает
 			 selenium.findElement(By.id("#edit-customer-profile-billing-field-phone-und-0-value")).sendKeys("88005553535");
-
-			 WebElement oformitZakaz = selenium.findElement(By.cssSelector("#edit-continue"));
+			
+		    	 WebElement oformitZakaz = selenium.findElement(By.cssSelector("#edit-continue"));
 			 oformitZakaz.click();
+		    
+		    	 assertEquals("Вы дошли до первой «несгораемой суммы»"
+    		    		,selenium.findElement(By.cssSelector("div.discount")).getText());
+    		    	 selenium.navigate().back();
+    		    
+			 
     		    
     			
    		    
    		    //39585
    		 // #content [class="node node-catalog node-promoted clearfix"] - íîäû
    		 
-   		 /*
-			List<WebElement> myList2=selenium.findElements(By.linkText("+"));
-			
-			for(int i=0; i<myList2.size(); i++)
-			{
-				myList2.get(i).click();	
-			}		
-		
-		*/	        
+   		         
    		  
     				 
  
