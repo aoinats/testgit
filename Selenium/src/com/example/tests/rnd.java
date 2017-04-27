@@ -36,6 +36,14 @@ public class rnd
 		    	List<WebElement> myList=selenium.findElements(By.cssSelector("input[value=Заказать]"));
 			//массив
 		    	List<WebElement> all_elements=new ArrayList<WebElement>();
+		    	//количество
+		    	List<WebElement> kolichestvo=selenium.findElements(By.linkText("+"));
+ 				
+ 				for(int i=0; i<kolichestvo.size(); i = i + 2)
+ 				{
+ 					kolichestvo.get(i).click();	
+ 					System.out.println(kolichestvo.get(i));
+ 				}		
 
 			    for(int i=0; i<myList.size(); i++)
 			    {
